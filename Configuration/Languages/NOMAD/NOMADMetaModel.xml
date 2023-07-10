@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<metaModel file_level="client" file_no="129">
+<!-- Version: 1.0.0 -->
+<!-- Categories --> 
+  <category name="APM NOMAD Module" rid="2129000">
+    <description>NOMAD</description>
+    <inheritedCategory name="APM Client Modules"/>
+  </category>
+  <category name="APM NOMAD Artifacts" rid="2129001">
+    <description>NOMAD Artifacts</description>
+    <inheritedCategory name="APM Client Language Artifacts"/>
+  </category>
+  <category name="NOMAD" rid="2129002">
+    <description>NOMAD</description>
+    <attribute name="extensions" stringValue="*.NOMAD;"/>
+    <inheritedCategory name="UniversalLanguage"/>
+    <inheritedCategory name="CsvLanguage"/>
+  </category>
+  <type name="NOMADProject" rid="2129003">
+    <description>NOMAD Project</description>
+    <inheritedCategory name="NOMAD"/>
+    <inheritedCategory name="APM NOMAD Module"/>
+    <inheritedCategory name="UAProject"/>
+ </type>
+  <type name="NOMAD_SUBSET" rid="2129099">
+    <description>NOMAD Subset</description>
+    <inheritedCategory name="NOMAD"/>
+    <inheritedCategory name="APM NOMAD Module"/>
+    <inheritedCategory name="PROJECT_SUBSET"/>
+  </type>
+  <type name="EnlightenNOMAD" rid="2129004">
+    <description>NOMAD</description>
+    <tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+  </type>
+	
+	<type name="NOMADProgram" rid="2129005">
+		<description>NOMAD Program</description>
+		<inheritedCategory name="NOMAD"/>
+		<inheritedCategory name="UAObject"/>
+        <inheritedCategory name="CAST_SQL_MetricableQuery" />
+		<inheritedCategory name="APM NOMAD Artifacts"/>
+		<inheritedCategory name="identification"/>
+		<inheritedCategory name="persistent"/>
+		<inheritedCategory name="bookmark"/>
+		<inheritedCategory name="POSITIONABLE"/>
+		<inheritedCategory name="metric"/>
+		<inheritedCategory name="METRICABLE"/>
+		<inheritedCategory name="EnlightenBrowsable"/>
+		<inheritedCategory name="EnlightenGraphable"/>
+		<inheritedCategory name="WithEnlightenProperties"/>
+		<inheritedCategory name="ESCALATION_ALL"/>
+		<inheritedCategory name="caseInsensitive"/>
+		<inheritedCategory name="CastSystemViews"/>	
+		<tree parent="sourceFile" category="amtParentship"/>
+		<tree parent="EnlightenNOMAD" category="EnlightenTree"/>
+	</type>	
+</metaModel>
